@@ -1,0 +1,115 @@
+/**
+MAIN BANNER
+===========================
+*/
+
+.main-banner {
+  background: $black url("../../images/main-banner.jpg");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  color: $white;
+  box-sizing: border-box;
+  padding-top: 240px;
+  @extend %clearfix;
+  min-height: 100vh;
+  position: relative;
+
+  @media #{$small-devices} {
+    background: $black url("../../images/tennis-girl.jpg");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .holder {
+    z-index: 100;
+    position: relative;
+  }
+
+  @media #{$small-devices} {
+    .holder {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-top: calc(100vw/2 - 20px);
+      margin-bottom: 10px;
+    }
+  }
+
+  .banner-bg {
+    background: rgba($black, 0.1);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 50;
+  }
+
+  h1 {
+    color: $white;
+    font-family: $strong;
+    font-size: $font-bigger-4;
+    font-weight: bold;
+    letter-spacing: -2px;
+    line-height: 80px;
+    margin: 0 0 20px 0;
+
+    @media #{$small-devices} {
+      font-size: $font-big-4;
+      line-height: 45px;
+      margin: 10px 0 0 0;
+      text-align: center;
+
+      br {
+        display: none;
+      }
+    }
+
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  .cta-bg {
+    border-radius: 42px;
+    display: inline-block;
+    background: rgba($white, 0.1);
+    padding: 7px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px rgba($dark-gray, 0.2);
+
+    @media #{$smartphones-1} {
+      margin-top: 0;
+    }
+
+    .cta {
+      background: $white;
+      color: $blue;
+      text-shadow: none;
+
+      &:hover {
+        background: $blue;
+        color: $white;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.tech-guy-entry {
+  display: none;
+
+  @media #{$smartphones-1} {
+    display: block;
+    margin-top: 40px;
+  }
+
+  > img {
+    @media #{$smartphones-1} {
+      width: 270px;
+    }
+  }
+}

@@ -1,0 +1,163 @@
+@import "core/variables";
+@import "core/animations";
+
+// General
+@import "parts/header";
+@import "parts/components";
+@import "parts/footer";
+
+// Home
+@import "parts/home";
+@import "parts/main-banner";
+@import "parts/contact";
+
+// Internals
+@import "parts/content";
+
+// Responsive
+@import "core/responsive";
+
+/**
+GENERAL
+===========================
+*/
+
+a:hover,
+header:hover {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $sans-serif;
+  margin: 0;
+  color: $medium-gray;
+}
+
+strong {
+  font-family: $strong !important;
+}
+
+p,
+li,
+blockquote,
+address,
+form {
+  color: $medium-gray;
+}
+
+p {
+  line-height: 35px;
+  font-size: $font-large;
+
+  a {
+    font-weight: bold;
+    text-decoration: none;
+  }
+}
+
+a {
+  font-weight: bold;
+  color: $blue;
+
+  &:hover {
+    color: $white;
+    opacity: 0.8;
+  }
+}
+
+h2 {
+  color: $dark-gray;
+  font-family: $headings;
+  font-size: $font-bigger;
+  font-weight: 500;
+  line-height: 50px;
+  margin: 0;
+
+  @media #{$smartphones-1} {
+    font-size: $font-big-2;
+    line-height: 39px;
+
+    div br {
+      display: none;
+    }
+
+    span {
+      display: block;
+    }
+  }
+
+  span {
+    color: $light-gray-2;
+    font-size: $font-medium-2;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+    display: inline-block;
+    font-weight: bold;
+    font-family: $strong;
+  }
+}
+
+h3 {
+  font-family: $strong;
+  font-size: $font-large-2;
+  margin: 40px 0 0 0;
+  color: $dark-gray;
+}
+
+h4 {
+  font-family: $strong;
+  font-size: $font-large;
+  margin: 20px 0 -5px 0;
+  color: $dark-gray;
+}
+
+.holder {
+  width: 85%;
+  margin: auto;
+
+  @media #{$smartphones-1} {
+    width: 92%;
+  }
+}
+
+.column-01,
+.column-02 {
+  width: 45%;
+
+  @media #{$smartphones-1} {
+    width: 100% !important;
+  }
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.text-color-paint {
+  background: #f1f1f1;
+  border-radius: 16% 33% 19% 22%;
+  display: inline;
+}
+
+.iconify {
+  width: 24px;
+  height: 24px;
+}
+
+.large-white {
+  color: $white;
+  width: 48px;
+  height: 48px;
+}
+
+.large-gray {
+  color: $gray;
+  width: 48px;
+  height: 48px;
+}

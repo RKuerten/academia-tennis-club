@@ -1,0 +1,67 @@
+/**
+VARS AND MIXINS
+===========================
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@400;700&display=swap');
+
+/* FONTS */
+$sans-serif:     'DM Sans', sans-serif;
+$headings:       'DM Sans', sans-serif;
+$strong:         'DM Sans', sans-serif;
+$button:         'Roboto', sans-serif;
+
+/* COLORS */
+
+// Basics
+$white:           #fff;
+$black:           #000;
+$red:             red;
+
+// Branding
+$blue:            #0680AC;
+$dark-green:      rgba(#051422, .7);
+$gray:            #999;
+
+// Grays
+$light-gray-0:    #F9F9F9;
+$light-gray-1:    #eee;
+$light-gray-2:    #bbb;
+$medium-gray:     #777;
+$dark-gray:       #333;
+
+
+/* FONT SIZES */
+
+$font-verysmall:  9px;
+$font-smaller:    11px;
+$font-small:      12px;
+$font-medium:     14px;
+$font-medium-2:   16px;
+$font-large:      18px;
+$font-large-2:    20px;
+$font-big:        22px;
+$font-big-2:      26px;
+$font-big-3:      30px;
+$font-big-4:      34px;
+$font-bigger:     40px;
+$font-bigger-2:   47px;
+$font-bigger-3:   60px;
+$font-bigger-4:   67px;
+
+
+/* BREAKPOINTS */
+
+$tablets:         "only screen and (max-width: 1000px)";
+$smartphones-1:   "only screen and (max-width: 960px)";
+$small-devices:   "only screen and (max-width: 360px)";
+
+
+/* MIXINS */
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

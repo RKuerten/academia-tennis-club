@@ -1,0 +1,154 @@
+/**
+HOME
+===========================
+*/
+
+/* Serviços e Produtos */
+.servicos {
+  padding: 90px 0 110px 0;
+  @extend %clearfix;
+  text-align: center;
+
+  @media #{$smartphones-1} {
+    padding: 70px 0 80px 0;
+  }
+
+  h2 {
+    text-align: left;
+  }
+
+  img {
+    margin-top: 30px;
+  }
+
+  ul {
+    padding: 90px 0;
+    margin: 0;
+    @extend %clearfix;
+
+    @media #{$smartphones-1} {
+      padding: 60px 0;
+    }
+  }
+
+  li {
+    width: 31%;
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    text-align: left;
+    box-sizing: border-box;
+    margin-left: 3%;
+
+    @media #{$smartphones-1} {
+      width: 100%;
+      margin: 40px 0 0 0;
+    }
+
+    i {
+      font-size: $font-big-4;
+      color: $light-gray-2;
+      margin-bottom: 35px;
+    }
+
+    h3 {
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin: 0;
+      line-height: 35px;
+    }
+
+    a {
+      margin-top: 5px;
+      display: inline-block;
+    }
+  }
+
+  li:first-child {
+    margin-left: 0;
+
+    @media #{$smartphones-1} {
+      margin-top: 0;
+    }
+  }
+}
+
+/* Estrutura */
+.estrutura {
+  padding: 90px 0 80px 0;
+  background: $light-gray-0;
+
+  @media #{$smartphones-1} {
+    padding: 70px 0 60px 0;
+  }
+
+  strong {
+    color: $dark-gray;
+  }
+
+  h3 {
+    margin-top: 80px;
+
+    @media #{$smartphones-1} {
+      margin-top: 60px;
+    }
+  }
+}
+
+.mobile-estrutura,
+.mobile-professores {
+  width: 100%;
+  margin-top: 70px;
+  display: none;
+
+  @media #{$smartphones-1} {
+    display: block;
+  }
+}
+
+.parallax-estrutura {
+  background-image: url("../../images/estrutura.jpg");
+  margin-top: 70px;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media #{$smartphones-1} {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+/* Professores */
+.professores {
+  padding: 90px 0 80px 0;
+
+  img {
+    width: 100%;
+  }
+}
+
+.parallax-professores {
+  background-image: url("../../images/professores.jpg");
+  margin-top: 70px;
+  height: 400px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media #{$smartphones-1} {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
+}

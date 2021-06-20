@@ -1,0 +1,61 @@
+/**
+FOOTER
+===========================
+*/
+
+footer {
+  @extend %clearfix;
+  padding: 40px 0;
+  background: $dark-green;
+  font-size: $font-large;
+  color: $white;
+  line-height: 30px;
+  text-align: center;
+
+  p {
+    color: $white;
+    margin: 0;
+  }
+
+  ul {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: $font-medium-2;
+    color: $white;
+    display: inline-block;
+
+    @media #{$smartphones-1} {
+      margin: 0 10px;
+    }
+  }
+
+  .coisa-lab {
+
+    @media #{$smartphones-1} {
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 0;
+    }
+  }
+
+  a {
+    font-family: $strong;
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue;
+    }
+  }
+
+  i {
+    font-size: $font-big;
+    float: left;
+    margin: 3px 8px 0 0;
+  }
+}
